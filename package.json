@@ -1,0 +1,19 @@
+{
+  "name": "dopees-chain-typescript",
+  "version": "0.0.1",
+  "description": "dopees-chain-typescript",
+  "main": "lib/dopees.js",
+  "types": "lib/dopees.d.ts",
+  "author": "",
+  "license": "MIT",
+  "flat": true,
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "@babel/traverse": "7.1.6",
+    "@babel/types": "7.2.0",
+    "@types/node": "^10.12.11",
+    "dopees-chain": "artyomszasa/dopees-chain",
+    "ts-node": "7.0.1",
+    "typescript": "3.1.6"
+  }
+}

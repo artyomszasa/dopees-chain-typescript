@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "*": ["types/*"] },
+    "lib": ["es6", "dom", "esnext.asynciterable"],
+    "target": "esnext",
+    "module": "es6",
+    "declaration": true,
+    "outDir": "./lib",
+    "strict": true,
+    "inlineSourceMap": true,
+    "moduleResolution": "node"
+  },
+  "include": ["src", "types"],
+  "exclude": ["**/__tests__/*"]
+}
