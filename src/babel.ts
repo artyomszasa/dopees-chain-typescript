@@ -281,13 +281,7 @@ export function inlineView(opts: Options): Executor {
         ast: true,
         root: name.basePath || context.basePath,
         rootMode: 'root',
-        // plugins: [
-        //   [ inlinePugPlugin, {
-        //     mappings: {
-        //       'lib/': 'src/'
-        //     }
-        //   }]
-        // ],
+        plugins: ['syntax-dynamic-import'],
         inputSourceMap: true,
         sourceMaps: 'inline',
         parserOpts: {
