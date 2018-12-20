@@ -281,7 +281,7 @@ export function inlineView(opts: Options): Executor {
         ast: true,
         root: name.basePath || context.basePath,
         rootMode: 'root',
-        plugins: ['syntax-dynamic-import'],
+        plugins: ['@babel/syntax-dynamic-import'],
         inputSourceMap: true,
         sourceMaps: 'inline',
         parserOpts: {
