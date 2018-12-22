@@ -52,6 +52,7 @@ export class TypeScriptTranspiler extends derived.FileMapper<Options, SourceInfo
         target: ts.ScriptTarget.ESNext,
         module: ts.ModuleKind.ESNext,
         inlineSourceMap: true,
+        inlineSources: true,
         strict: true,
         moduleResolution: ts.ModuleResolutionKind.NodeJs,
         ...state.compilerOptions
