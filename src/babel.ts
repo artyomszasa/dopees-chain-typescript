@@ -346,7 +346,12 @@ export function inlineView(opts: Options): Executor {
         const importPath = node.source.value;
         if (importPath && !importPath.endsWith('.js')) {
           if (true === opts.updateExternalImports && !importPath.startsWith('./') && !importPath.startsWith('../')) {
-            node.source.value = fspath.join(fspath.relative(fspath.dirname(name.path), opts.distRoot), importPath + '.js');
+            let target = fspath.join(fspath.relative(fspath.dirname(name.path), opts.distRoot), importPath + '.js');
+            // same folder dependencies should start with ./
+            if (!target.startsWith('..')) {
+              target = './' + target;
+            }
+            node.source.value = target;
           } else {
             node.source.value += '.js';
           }
