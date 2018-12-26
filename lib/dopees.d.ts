@@ -7,4 +7,4 @@ export interface Options {
     updateExternalImports?: boolean;
 }
 export { DependencyEntry } from './babel';
-export declare function dopees(options: Options): import("dopees-chain/lib/task").Executor;
+export declare function dopees(options: Options): import("dopees-chain").Executor;

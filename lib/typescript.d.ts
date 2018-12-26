@@ -27,4 +27,4 @@ export declare class TypeScriptTranspiler extends derived.FileMapper<Options, So
     }>;
     protected init(options: Options): TranspilerState;
 }
-export declare function typescript(opts: Options): import("dopees-chain/lib/task").Executor;
+export declare function typescript(opts: Options): import("dopees-chain").Executor;
